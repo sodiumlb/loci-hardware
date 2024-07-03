@@ -29,8 +29,8 @@ When LOCI is powered over the USB-C port (e.g by a powered USB hub), it will dis
 
 ## What to expect
 LOCI operates in two different modes, “Reset” and “Run”.
-	Reset: Oric is held in reset and a command line monitor on LOCI is accessible via a USB serial adapter.
-	Run: Oric is executing, with LOCI in control of the page 3 I/O memory space and the ROM memory space.
+* Reset: Oric is held in reset and a command line monitor on LOCI is accessible via a USB serial adapter.
+* Run: Oric is executing, with LOCI in control of the page 3 I/O memory space and the ROM memory space.
 
 Because we are still developing the FW and ROM, LOCI currently starts in Reset mode and we use the action button to toggle between the two modes. So when powering on, Oric is held in reset and we click the action button once to turn to Run mode.
 
@@ -43,9 +43,9 @@ The current LOCI ROM is in an in-between state after experimenting with building
 ## Using the LOCI ROM
 The LOCI ROM is mapped in and executed when the user pushes the Action button. It allows for the configuration of the LOCI emulation functions by keyboard navigation.
 Keyboard mapping:
-	Arrows up/down:	Move between menu items
-	Space:			Select file or toggle current menu item
-	Esc:			Exit current popup, or boot if at the top menu
+* Arrows up/down:	Move between menu items
+* Space:			Select file or toggle current menu item
+* Esc:			Exit current popup, or boot if at the top menu
 Other keys may be in active use for in-development features or debug functionality and give undefined results/behavior.
 
 There is no dedicated eject/unmount menu element at the moment, but pressing Space after the file selection dialog shows, but before navigating to any directory items, will unmount the previous mounted file without mounting a new.
@@ -55,9 +55,9 @@ When LOCI is in Reset state, there is a serial terminal command line interface a
 
 
 It requires either:
-A USB to RS232 adapter and a computer/terminal with physical RS232 port
+* A USB to RS232 adapter and a computer/terminal with physical RS232 port
 or
-A USB to USB serial null modem, either as a dedicated device or by using two USB to RS232 adapters with a null modem cable/converter in between.
+* A USB to USB serial null modem, either as a dedicated device or by using two USB to RS232 adapters with a null modem cable/converter in between.
 
 The USB to RS232 adapters also need to work with TinyUSB in host mode.
 <TODO add known working device list>
